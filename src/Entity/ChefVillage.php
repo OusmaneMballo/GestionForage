@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ChefVillageRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -31,6 +33,16 @@ class ChefVillage
      * @ORM\Column(type="string", length=15, nullable=true)
      */
     private $telephone;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Village::class, mappedBy="chef")
+     */
+    private $villages;
+
+    public function __construct()
+    {
+        $this->villages = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -69,6 +81,37 @@ class ChefVillage
     public function setTelephone(?string $telephone): self
     {
         $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Village[]
+     */
+    public function getVillages(): Collection
+    {
+        return $this->villages;
+    }
+
+    public function addVillage(Village $village): self
+    {
+        if (!$this->villages->contains($village)) {
+            $this->villages[] = $village;
+            $village->setChef($this);
+        }
+
+        return $this;
+    }
+
+    public function removeVillage(Village $village): self
+    {
+        if ($this->villages->contains($village)) {
+            $this->villages->removeElement($village);
+            // set the owning side to null (unless already changed)
+            if ($village->getChef() === $this) {
+                $village->setChef(null);
+            }
+        }
 
         return $this;
     }

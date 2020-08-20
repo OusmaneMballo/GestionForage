@@ -32,6 +32,16 @@ class Consommation
      */
     private $date;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Compteur::class, inversedBy="consommations")
+     */
+    private $compteur;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Facture::class, cascade={"persist", "remove"})
+     */
+    private $facturation;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +79,30 @@ class Consommation
     public function setDate(string $date): self
     {
         $this->date = $date;
+
+        return $this;
+    }
+
+    public function getCompteur(): ?Compteur
+    {
+        return $this->compteur;
+    }
+
+    public function setCompteur(?Compteur $compteur): self
+    {
+        $this->compteur = $compteur;
+
+        return $this;
+    }
+
+    public function getFacturation(): ?Facture
+    {
+        return $this->facturation;
+    }
+
+    public function setFacturation(?Facture $facturation): self
+    {
+        $this->facturation = $facturation;
 
         return $this;
     }

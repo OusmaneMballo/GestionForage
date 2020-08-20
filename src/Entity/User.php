@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -41,6 +43,22 @@ class User
      * @ORM\Column(type="string", length=15, nullable=true)
      */
     private $telephone;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Profil::class, inversedBy="users")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $profil;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Client::class, mappedBy="user")
+     */
+    private $client;
+
+    public function __construct()
+    {
+        $this->client = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -103,6 +121,49 @@ class User
     public function setTelephone(?string $telephone): self
     {
         $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    public function getProfil(): ?Profil
+    {
+        return $this->profil;
+    }
+
+    public function setProfil(?Profil $profil): self
+    {
+        $this->profil = $profil;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Client[]
+     */
+    public function getClient(): Collection
+    {
+        return $this->client;
+    }
+
+    public function addClient(Client $client): self
+    {
+        if (!$this->client->contains($client)) {
+            $this->client[] = $client;
+            $client->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeClient(Client $client): self
+    {
+        if ($this->client->contains($client)) {
+            $this->client->removeElement($client);
+            // set the owning side to null (unless already changed)
+            if ($client->getUser() === $this) {
+                $client->setUser(null);
+            }
+        }
 
         return $this;
     }

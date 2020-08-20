@@ -37,6 +37,11 @@ class Facture
      */
     private $numero;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Reglement::class, cascade={"persist", "remove"})
+     */
+    private $reglement;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Facture
     public function setNumero(string $numero): self
     {
         $this->numero = $numero;
+
+        return $this;
+    }
+
+    public function getReglement(): ?Reglement
+    {
+        return $this->reglement;
+    }
+
+    public function setReglement(?Reglement $reglement): self
+    {
+        $this->reglement = $reglement;
 
         return $this;
     }
