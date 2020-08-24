@@ -2,174 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391d6639-97fb-4ced-b6d1-8a8b498b1c05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/config/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/config/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/config/rollup.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/AdminLTE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/CardRefresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/CardWidget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/ControlSidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/DirectChat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/Dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/ExpandableTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/Fullscreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/PushMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/SidebarSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/SiteSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/Toasts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/TodoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/js/Treeview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/npm/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/npm/DocsPlugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/npm/DocsPublish.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/npm/Plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/npm/Publish.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/npm/vnu-jar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_adminlte.raw.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_alerts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_bootstrap-variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_brand.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_callout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_control-sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_direct-chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_elevation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_info-box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_main-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_main-sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_miscellaneous.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_navs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_products.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_progress-bars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_sidebar-mini.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_small-box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_social-widgets.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_timeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_toasts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_users-list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/adminlte.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_accent.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_backgrounds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_direct-chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_miscellaneous.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/mixins/_toasts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_404_500_errors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_e-commerce.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_invoice.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_lockscreen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_login_and_register.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_mailbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/pages/_projects.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/_components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/_extra-components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/_miscellaneous.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/_pages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/_plugins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/adminlte.components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/adminlte.core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/adminlte.extra-components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/adminlte.pages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/parts/adminlte.plugins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_bootstrap-slider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_bootstrap-switch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_fullcalendar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_icheck-bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_jqvmap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_mapael.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_miscellaneous.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_pace.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_select2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_sweetalert2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/build/scss/plugins/_toastr.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/adminlte.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/adminlte.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/adminlte.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/adminlte.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.components.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.components.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.components.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.core.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.core.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.core.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.extra-components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.extra-components.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.extra-components.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.pages.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.pages.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.pages.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.plugins.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.plugins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/AdminLTELogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/avatar3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/avatar4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/avatar5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/boxed-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/boxed-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/credit/american-express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/credit/cirrus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/credit/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/credit/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/credit/paypal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/credit/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/default-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/photo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/photo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/prod-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/prod-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/prod-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/prod-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/prod-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user1-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user2-160x160.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user3-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user4-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user5-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user6-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user7-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/img/user8-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/adminlte.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/adminlte.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/adminlte.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/adminlte.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/pages/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/pages/dashboard2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/template/dist/js/pages/dashboard3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -203,17 +37,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7481">
-              <caret line="1035" column="7" selection-start-line="1035" selection-start-column="7" selection-end-line="1035" selection-end-column="7" />
+            <state relative-caret-position="304">
+              <caret line="228" column="29" lean-forward="true" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
               <folding>
+                <element signature="n#li#1;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#51984#51990#0#HTML" expanded="true" />
+                <element signature="n#ul#1;n#nav#0;n#div#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#13845#13851#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>path(</find>
+      <find>Dashboard v3</find>
+      <find>.js</find>
+      <find>Menu</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>(</replace>
+      <replace>.js')}}</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -223,8 +71,8 @@
       <list>
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Controller/AccueilController.php" />
-        <option value="$PROJECT_DIR$/templates/accueil/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/accueil/index.html.twig" />
       </list>
     </option>
   </component>
@@ -354,17 +202,6 @@
             <path>
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -423,19 +260,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597920924793</updated>
-      <workItem from="1597920926692" duration="8477000" />
+      <workItem from="1597920926692" duration="14322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8477000" />
+    <option name="totallyTimeSpent" value="14322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1274" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17857143" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.62765956" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -506,17 +343,19 @@
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7481">
-          <caret line="1035" column="7" selection-start-line="1035" selection-start-column="7" selection-end-line="1035" selection-end-column="7" />
+        <state relative-caret-position="304">
+          <caret line="228" column="29" lean-forward="true" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
           <folding>
+            <element signature="n#li#1;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#a#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#51984#51990#0#HTML" expanded="true" />
+            <element signature="n#ul#1;n#nav#0;n#div#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#13845#13851#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
