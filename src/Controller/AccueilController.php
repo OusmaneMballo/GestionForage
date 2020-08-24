@@ -16,4 +16,12 @@ class AccueilController extends AbstractController
             'controller_name' => 'AccueilController',
         ]);
     }
+
+    /**
+     * @Route("/abnnemnt", name="app_abonnement")
+     */
+    public function abonnement()
+    {
+     return $this->redirectToRoute('app_abonnement_index');
+    }
 }

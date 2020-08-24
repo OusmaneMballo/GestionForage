@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Dashboard 3</title>
+    <title>{% block title %}Accueil{% endblock %}</title>
+    <meta charset="UTF-8">
+    {% block stylesheets %}
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -24,6 +26,7 @@
     <link rel="stylesheet" href="{{ ('asset/template/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ ('asset/template/plugins/summernote/summernote-bs4.min.css') }}">
+    {% endblock %}
 </head>
 <!--
 `body` tag options:
@@ -195,7 +198,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{ path('app_abonnement') }}" class="nav-link">
                                     <i class="nav-icon fas fa-th"></i>
                                     <p>
                                         Ajouter un abonné
@@ -255,8 +258,9 @@
 
         <!-- Main content -->
         <div class="content">
+            {% block body %}
 
-
+            {% endblock %}
         </div>
         <!-- /.content -->
     </div>
@@ -278,7 +282,7 @@
     </footer>
 </div>
 <!-- ./wrapper -->
-
+{% block javascripts %}
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
 <script src="jquery/jquery.min.js"></script>
@@ -313,6 +317,6 @@
 <script src="{{ ('asset/template/dist/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ ('asset/template/dist/js/pages/dashboard.js') }}"></script>
-
+{% endblock %}
 </body>
 </html>
