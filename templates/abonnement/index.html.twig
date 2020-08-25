@@ -32,53 +32,98 @@
                             <!-- general form elements disabled -->
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">General Elements</h3>
+                                    <h3 class="card-title"> Formulaire d'abonnement</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <form>
+                                    <form method="post" action="{{ path('app_abonnement_add') }}" class="form">
+                                        <input type="hidden" name="token" value="{{ csrf_token('abonnement_token') }}">
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <!-- text input -->
-                                                <div class="form-group">
-                                                    <label>Text</label>
-                                                    <input type="text" class="form-control" placeholder="Enter ...">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>Text Disabled</label>
-                                                    <input type="text" class="form-control" placeholder="Enter ..." disabled>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- input states -->
-                                        <div class="form-group">
-                                            <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Input with
-                                                success</label>
-                                            <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i> Input with
-                                                error</label>
-                                            <input type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <!-- select -->
                                                 <div class="form-group">
-                                                    <label>Select</label>
-                                                    <select class="form-control">
-                                                        <option>option 1</option>
-                                                        <option>option 2</option>
-                                                        <option>option 3</option>
-                                                        <option>option 4</option>
-                                                        <option>option 5</option>
+                                                    <label>Clients</label>
+                                                    <select class="form-control" name="client">
+                                                        <option value="0">---Liste clients---</option>
+                                                        {% if listClients !=null %}
+                                                            {% for client in listClients %}
+                                                                <option value="{{ client.id }}">{{ client.nom }} {{ client.nom }}</option>
+                                                            {% endfor %}
+                                                        {% endif %}
+
+                                                        <option value="-1">Ajouter un nouveau client...</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
-
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- textarea -->
+                                                <div class="form-group">
+                                                    <label>Description de l'abonnement</label>
+                                                    <textarea class="form-control" name="description" rows="5" placeholder="Description ..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="clientForm">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <!-- text input -->
+                                                    <div class="form-group">
+                                                        <label>Prenom *</label>
+                                                        <input type="text" class="form-control" name="prenom" placeholder="Prenom client..." required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Nom *</label>
+                                                        <input type="text" name="nom" class="form-control" placeholder="Nom client..." required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <!-- text input -->
+                                                    <div class="form-group">
+                                                        <label>Nci *</label>
+                                                        <input type="text" name="nci" class="form-control" placeholder="Numero carte d'identite nationale..." required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Telephone *</label>
+                                                        <input type="text" name="telephone" class="form-control" placeholder="Telephone..." required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-form-label" for="datenaiss">Date de naissance</label>
+                                                        <input type="date" class="form-control" id="datenaiss" name="datenaiss">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <!-- select -->
+                                                    <div class="form-group">
+                                                        <label>Village *</label>
+                                                        <select class="form-control" name="village" required>
+                                                            <option value="0">---Liste villages---</option>
+                                                            {% if listVillages != null %}
+                                                                {% for village in listVillages %}
+                                                                    <option value="{{ village.id }}"> {{ village.nom }}</option>
+                                                                {% endfor %}
+                                                            {% endif %}
+                                                            <option value="-1">Ajouter son village...</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="reset" class="btn btn-default">Annuler</button>
+                                        </div>
                                     </form>
                                 </div>
                                 <!-- /.card-body -->
