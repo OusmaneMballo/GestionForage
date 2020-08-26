@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391d6639-97fb-4ced-b6d1-8a8b498b1c05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Compteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Compteur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/abonnement/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/abonnement/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/abonnement/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="188" column="67" lean-forward="true" selection-start-line="188" selection-start-column="67" selection-end-line="188" selection-end-column="67" />
+            <state relative-caret-position="321">
+              <caret line="187" column="111" selection-start-line="187" selection-start-column="111" selection-end-line="187" selection-end-column="111" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#font#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#font#0;n#font#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#font#0;n#button#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#font#0;n#font#0;n#button#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#font#0;n#button#2;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#font#0;n#font#0;n#button#2;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#font#0;n#button#3;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,11 +41,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Compteur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="295">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Abonnement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-489">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -80,9 +85,9 @@
         <option value="$PROJECT_DIR$/src/Controller/AccueilController.php" />
         <option value="$PROJECT_DIR$/templates/accueil/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AbonnementController.php" />
-        <option value="$PROJECT_DIR$/templates/abonnement/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Client.php" />
         <option value="$PROJECT_DIR$/src/Entity/Compteur.php" />
+        <option value="$PROJECT_DIR$/templates/abonnement/index.html.twig" />
       </list>
     </option>
   </component>
@@ -212,18 +217,23 @@
             <path>
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="abonnement" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,12 +285,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597920924793</updated>
-      <workItem from="1597920926692" duration="32463000" />
+      <workItem from="1597920926692" duration="33985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32463000" />
+    <option name="totallyTimeSpent" value="33985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1274" height="773" extended-state="0" />
@@ -355,13 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Abonnement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -391,23 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/abonnement/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="188" column="67" lean-forward="true" selection-start-line="188" selection-start-column="67" selection-end-line="188" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#font#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#font#0;n#font#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#font#0;n#button#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#font#0;n#font#0;n#button#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#font#0;n#button#2;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#font#0;n#font#0;n#button#2;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -415,10 +401,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Version20200826122740.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Compteur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="295">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Abonnement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/abonnement/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="187" column="111" selection-start-line="187" selection-start-column="111" selection-end-line="187" selection-end-column="111" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#font#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#font#0;n#button#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#font#0;n#button#2;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#font#0;n#button#3;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -170,26 +170,27 @@
                                             <td>{{ abonnement.client.prenom }} {{ abonnement.client.nom }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-block btn-outline-info btn-sm">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">
+                                                        <font style="horiz-align: right;">
                                                             Details
                                                         </font>
-                                                    </font>
                                                 </button>
                                                 <button type="button" class="btn btn-block btn-outline-warning btn-sm">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">
+                                                        <font style="horiz-align: right;">
                                                             Edit
                                                         </font>
-                                                    </font>
                                                 </button>
-                                                <button type="button" class="btn btn-block btn-outline-dark btn-sm">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">
+                                                <button type="button" class="btn btn-block btn-outline-secondary btn-sm">
+                                                        <font style="horiz-align: right;">
                                                             Archive
                                                         </font>
-                                                    </font>
                                                 </button>
+                                                {% if abonnement.compteur==null %}
+                                                    <button type="button" class="btn btn-block btn-outline-info btn-sm">
+                                                            <font style="horiz-align: right;">
+                                                                Attribuer Compteur
+                                                            </font>
+                                                    </button>
+                                                {% endif %}
                                             </td>
                                         </tr>
                                     {% endfor %}
