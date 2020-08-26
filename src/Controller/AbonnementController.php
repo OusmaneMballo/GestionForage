@@ -32,6 +32,7 @@ class AbonnementController extends AbstractController
     {
         $data['listClients']=$this->client_repository->findAll();
         $data['listVillages']=$this->village_repository->findAll();
+        $data['listAbonnements']=$this->abonnement_repository->findAll();
         return $this->render('abonnement/index.html.twig',$data);
     }
 
