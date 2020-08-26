@@ -37,6 +37,11 @@ class Abonnement
      */
     private $client;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Compteur::class, inversedBy="abonnement", cascade={"persist", "remove"})
+     */
+    private $compteur;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Abonnement
     public function setClient(?Client $client): self
     {
         $this->client = $client;
+
+        return $this;
+    }
+
+    public function getCompteur(): ?Compteur
+    {
+        return $this->compteur;
+    }
+
+    public function setCompteur(?Compteur $compteur): self
+    {
+        $this->compteur = $compteur;
 
         return $this;
     }

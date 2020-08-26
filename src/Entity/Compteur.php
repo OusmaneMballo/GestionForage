@@ -30,14 +30,14 @@ class Compteur
     private $etat;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Client::class, inversedBy="compteurs")
-     */
-    private $client;
-
-    /**
      * @ORM\OneToMany(targetEntity=Consommation::class, mappedBy="compteur")
      */
     private $consommations;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Abonnement::class, mappedBy="compteur", cascade={"persist", "remove"})
+     */
+    private $abonnement;
 
     public function __construct()
     {
@@ -73,18 +73,6 @@ class Compteur
         return $this;
     }
 
-    public function getClient(): ?Client
-    {
-        return $this->client;
-    }
-
-    public function setClient(?Client $client): self
-    {
-        $this->client = $client;
-
-        return $this;
-    }
-
     /**
      * @return Collection|Consommation[]
      */
@@ -111,6 +99,24 @@ class Compteur
             if ($consommation->getCompteur() === $this) {
                 $consommation->setCompteur(null);
             }
+        }
+
+        return $this;
+    }
+
+    public function getAbonnement(): ?Abonnement
+    {
+        return $this->abonnement;
+    }
+
+    public function setAbonnement(?Abonnement $abonnement): self
+    {
+        $this->abonnement = $abonnement;
+
+        // set (or unset) the owning side of the relation if necessary
+        $newCompteur = null === $abonnement ? null : $this;
+        if ($abonnement->getCompteur() !== $newCompteur) {
+            $abonnement->setCompteur($newCompteur);
         }
 
         return $this;

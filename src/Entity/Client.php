@@ -59,15 +59,9 @@ class Client
      */
     private $village;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Compteur::class, mappedBy="client")
-     */
-    private $compteurs;
-
     public function __construct()
     {
         $this->abonnements = new ArrayCollection();
-        $this->compteurs = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -190,34 +184,4 @@ class Client
         return $this;
     }
 
-    /**
-     * @return Collection|Compteur[]
-     */
-    public function getCompteurs(): Collection
-    {
-        return $this->compteurs;
-    }
-
-    public function addCompteur(Compteur $compteur): self
-    {
-        if (!$this->compteurs->contains($compteur)) {
-            $this->compteurs[] = $compteur;
-            $compteur->setClient($this);
-        }
-
-        return $this;
-    }
-
-    public function removeCompteur(Compteur $compteur): self
-    {
-        if ($this->compteurs->contains($compteur)) {
-            $this->compteurs->removeElement($compteur);
-            // set the owning side to null (unless already changed)
-            if ($compteur->getClient() === $this) {
-                $compteur->setClient(null);
-            }
-        }
-
-        return $this;
-    }
 }
