@@ -1,0 +1,79 @@
+{% extends 'accueil/index.html.twig' %}
+
+{% block title %}Abonnement | Attrib{% endblock %}
+
+{% block body %}
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- right column -->
+                <div class="col-md-12">
+                    <!-- general form elements disabled -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Attribution de compteur</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <form method="post" action="{{ path('app_abonnement_add') }}" class="form">
+                                <input type="hidden" name="token" value="{{ csrf_token('attrib_token') }}">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- select -->
+                                        <div class="form-group">
+                                            <label>Clients</label>
+                                            <select class="form-control" name="client">
+                                                <option value="0">---Liste Compteurs---</option>
+                                                {% if listcompteurs !=null %}
+                                                    {% for c in listcompteurs %}
+                                                        <option value="{{ c.id }}">{{ c.id }} {{ c.numero }}</option>
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="clientForm">
+                                    <div class="row">
+                                        <div class="card-body table-responsive p-0" style="height: 300px;">
+                                            <table class="table table-head-fixed text-nowrap">
+                                                <thead>
+                                                <tr>
+                                                    <th>Numero</th>
+                                                    <th>Date</th>
+                                                    <th>Client</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                {% if abonnement != null %}
+                                                        <tr>
+                                                            <td>{{ abonnement.numero }}</td>
+                                                            <td>{{ abonnement.date }}</td>
+                                                            <td>{{ abonnement.client.prenom }} {{ abonnement.client.nom }}</td>
+                                                        </tr>
+                                                {% endif %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="reset" class="btn btn-default">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!--/.col (right) -->
+                <!-- /.card-header -->
+                <!-- /.card-body -->
+            </div>
+        </div>          <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+{% endblock %}

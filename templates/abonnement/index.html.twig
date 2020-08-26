@@ -187,7 +187,9 @@
                                                 {% if abonnement.compteur==null %}
                                                     <button type="button" class="btn btn-outline-primary btn-sm">
                                                             <font style="horiz-align: right;">
-                                                                Attribuer Compteur
+                                                                <a href="{{ path('app_abonnement_attrib', {'id':abonnement.id }) }}">
+                                                                    Attribuer Compteur
+                                                                </a>
                                                             </font>
                                                     </button>
                                                 {% endif %}

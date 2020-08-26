@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Abonnement;
 use App\Entity\Client;
+use App\Entity\Compteur;
 use App\Entity\Village;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -16,6 +17,7 @@ class AbonnementController extends AbstractController
     private $abonnement_repository;
     private $client_repository;
     private $village_repository;
+    private $compteur_repository;
 
     public function __construct(EntityManagerInterface $emi)
     {
@@ -23,6 +25,7 @@ class AbonnementController extends AbstractController
         $this->abonnement_repository=$this->em->getRepository(Abonnement::class);
         $this->client_repository=$this->em->getRepository(Client::class);
         $this->village_repository=$this->em->getRepository(Village::class);
+        $this->compteur_repository=$this->em->getRepository(Compteur::class);
     }
 
     /**
@@ -88,5 +91,15 @@ class AbonnementController extends AbstractController
         $this->em->persist($client);
         $this->em->flush();
         return $client->getId();
+    }
+
+    /**
+     * @Route("/attribution/{id<[0-9]+>}", name="app_abonnement_attrib")
+     */
+    public function attribution(int $id)
+    {
+        $data["abonnement"]=$this->abonnement_repository->find($id);
+        $data["listcompteurs"]=$this->compteur_repository->findBy(array("etat"=>"Non attribuer"));
+        return $this->render('abonnement/attribution.html.twig',$data);
     }
 }
