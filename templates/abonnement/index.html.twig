@@ -1,6 +1,6 @@
 {% extends 'accueil/index.html.twig' %}
 
-{% block title %}Abonnement{% endblock %}
+{% block title %}Abonnement | Home{% endblock %}
 
 {% block body %}
     <div class="wrapper">
@@ -169,23 +169,23 @@
                                             <td>{{ abonnement.date }}</td>
                                             <td>{{ abonnement.client.prenom }} {{ abonnement.client.nom }}</td>
                                             <td>
-                                                <button type="button" class="btn btn-block btn-outline-info btn-sm">
+                                                <button type="button" class="btn btn-outline-info btn-sm">
                                                         <font style="horiz-align: right;">
                                                             Details
                                                         </font>
                                                 </button>
-                                                <button type="button" class="btn btn-block btn-outline-warning btn-sm">
+                                                <button type="button" class="btn btn-outline-warning btn-sm">
                                                         <font style="horiz-align: right;">
                                                             Edit
                                                         </font>
                                                 </button>
-                                                <button type="button" class="btn btn-block btn-outline-secondary btn-sm">
+                                                <button type="button" class="btn btn-outline-secondary btn-sm">
                                                         <font style="horiz-align: right;">
                                                             Archive
                                                         </font>
                                                 </button>
                                                 {% if abonnement.compteur==null %}
-                                                    <button type="button" class="btn btn-block btn-outline-info btn-sm">
+                                                    <button type="button" class="btn btn-outline-primary btn-sm">
                                                             <font style="horiz-align: right;">
                                                                 Attribuer Compteur
                                                             </font>
