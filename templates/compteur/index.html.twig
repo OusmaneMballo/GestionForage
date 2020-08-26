@@ -3,5 +3,119 @@
 {% block title %}Compteur | Home{% endblock %}
 
 {% block body %}
-Welcom! compteur
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- right column -->
+                <div class="col-md-12">
+                    <!-- general form elements disabled -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Ajouter un compteur</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <form method="post" action="{{ path('app_compteur_add') }}" class="form">
+                                <input type="hidden" name="token" value="{{ csrf_token('compteur_token') }}">
+                                <div id="clientForm">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- text input -->
+                                            <div class="form-group">
+                                                <label>Compteur number *</label>
+                                                <input type="text" class="form-control" name="numero" placeholder="numero compteur..." required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="reset" class="btn btn-default">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!--/.col (right) -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Liste Compteurs</h3>
+                                    <div class="card-tools">
+                                        <div class="input-group input-group-sm" style="width: 150px;">
+                                            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-default">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0" style="height: 300px;">
+                    <table class="table table-head-fixed text-nowrap">
+                        <thead>
+                        <tr>
+                            <th>Numero</th>
+                            <th>Etat</th>
+                            <th>Client</th>
+                            <th>Village</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% if listcompteurs != null %}
+                            {% for compteur in listcompteurs %}
+                                <tr>
+                                    <td>{{ compteur.numero }}</td>
+                                    {% if compteur.etat=="Attribuer" %}
+                                        <td class="text-md-center text-success">{{ compteur.etat }}</td>
+                                        <td>{{ compteur.abonnement.client.prenom }} {{ compteur.abonnement.client.nom }}</td>
+                                        <td>{{ compteur.abonnement.client.village.nom }}</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-warning btn-sm">
+                                                <font style="horiz-align: right;">
+                                                    Desaffecter
+                                                </font>
+                                            </button>
+                                        </td>
+                                    {% else %}
+                                        <td class="text-md-center text-warning">{{ compteur.etat }}</td>
+                                        <td> -- </td>
+                                        <td> -- </td>
+                                    {% endif %}
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info btn-sm">
+                                            <font style="horiz-align: right;">
+                                                Edit
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <font style="horiz-align: right;">
+                                                Supprimer
+                                            </font>
+                                        </button>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>          <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 {% endblock %}

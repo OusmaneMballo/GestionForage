@@ -41,13 +41,10 @@ class AbonnementController extends AbstractController
      */
     public function add(Request $request)
     {
-        echo 'okey1';
         if($request->isMethod("POST"))
         {
-            echo 'okey2';
             if ($this->isCsrfTokenValid('abonnement_token', $request->request->get('token')))
             {
-                echo 'okey3';
                 $abonnement=new Abonnement();
                 if($request->request->get('client')==-1)
                 {
