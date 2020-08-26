@@ -17,14 +17,14 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form method="post" action="{{ path('app_abonnement_add') }}" class="form">
+                            <form method="post" action="{{ path('app_abonnement_affectation') }}" class="form">
                                 <input type="hidden" name="token" value="{{ csrf_token('attrib_token') }}">
+                                <input type="hidden" name="abonnement" value="{{ abonnement.id }}">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <!-- select -->
                                         <div class="form-group">
-                                            <label>Clients</label>
-                                            <select class="form-control" name="client">
+                                            <select class="form-control" name="compteur">
                                                 <option value="0">---Liste Compteurs---</option>
                                                 {% if listcompteurs !=null %}
                                                     {% for c in listcompteurs %}

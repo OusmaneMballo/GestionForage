@@ -102,4 +102,35 @@ class AbonnementController extends AbstractController
         $data["listcompteurs"]=$this->compteur_repository->findBy(array("etat"=>"Non attribuer"));
         return $this->render('abonnement/attribution.html.twig',$data);
     }
+
+    /**
+     * @Route("/affectation", name="app_abonnement_affectation", methods={"POST|PATCH"})
+     */
+    public function attribCompteur(Request $request)
+    {
+        if($request->isMethod("POST"))
+        {
+            if($this->isCsrfTokenValid('attrib_token', $request->request->get('token')))
+            {
+                if($request->request->get('compteur')!=0)
+                {
+                    $compteur=$this->compteur_repository->find($request->request->get('compteur'));
+
+                    if($compteur!=null)
+                    {
+                        $compteur->setEtat("Attribuer");
+                        $abonnement=$this->abonnement_repository->find($request->request->get('abonnement'));
+                        if($abonnement!=null)
+                        {
+                            $abonnement->setCompteur($compteur);
+                            $this->em->flush();
+                            return $this->redirectToRoute('app_abonnement_index');
+                        }
+                    }
+                }
+            }
+        }
+
+        return $this->redirectToRoute('app_abonnement_index');
+    }
 }
