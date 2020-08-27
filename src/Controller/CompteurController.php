@@ -50,4 +50,16 @@ class CompteurController extends AbstractController
         }
         return $this->redirectToRoute("app_compteur");
     }
+
+    /**
+     * @Route("/coupure/{id<[0-9]+>}", name="app_compteur_coupure")
+     */
+    public function couppure(int $id)
+    {
+        $compteur=$this->compteur_repository->find($id);
+        $compteur->setEtat("Couper");
+        $this->em->flush();
+
+        return $this->redirectToRoute('app_compteur');
+    }
 }

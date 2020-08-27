@@ -89,24 +89,69 @@
                                                     Desaffecter
                                                 </font>
                                             </button>
+                                            <button type="button" class="btn btn-outline-dark btn-sm">
+                                                <font style="horiz-align: right;">
+                                                    <a href="{{ path('app_compteur_coupure', {'id':compteur.id }) }}">
+                                                        Couper
+                                                    </a>
+                                                </font>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info btn-sm">
+                                                <font style="horiz-align: right;">
+                                                    Modifier
+                                                </font>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm">
+                                                <font style="horiz-align: right;">
+                                                    Supprimer
+                                                </font>
+                                            </button>
                                         </td>
+                                        {% elseif compteur.etat=="Couper" %}
+                                            <td class="text-md-center text-gray">{{ compteur.etat }}</td>
+                                            <td>{{ compteur.abonnement.client.prenom }} {{ compteur.abonnement.client.nom }}</td>
+                                            <td>{{ compteur.abonnement.client.village.nom }}</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-warning btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        Desaffecter
+                                                    </font>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-success btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        <a href="{{ path('app_compteur_coupure', {'id':compteur.id }) }}">
+                                                            Reactiver
+                                                        </a>
+                                                    </font>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-info btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        Modifier
+                                                    </font>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        Supprimer
+                                                    </font>
+                                                </button>
+                                            </td>
                                     {% else %}
                                         <td class="text-md-center text-warning">{{ compteur.etat }}</td>
                                         <td> -- </td>
                                         <td> -- </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-info btn-sm">
+                                                <font style="horiz-align: right;">
+                                                    Modifier
+                                                </font>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm">
+                                                <font style="horiz-align: right;">
+                                                    Supprimer
+                                                </font>
+                                            </button>
+                                        </td>
                                     {% endif %}
-                                    <td>
-                                        <button type="button" class="btn btn-outline-info btn-sm">
-                                            <font style="horiz-align: right;">
-                                                Edit
-                                            </font>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <font style="horiz-align: right;">
-                                                Supprimer
-                                            </font>
-                                        </button>
-                                    </td>
                                 </tr>
                             {% endfor %}
                         {% endif %}
