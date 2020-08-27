@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Abonnement;
 use App\Entity\Compteur;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -12,12 +13,13 @@ class CompteurController extends AbstractController
 {
     private $em;
     private $compteur_repository;
+    private $abonnement_repository;
 
     public function __construct(EntityManagerInterface $emi)
     {
         $this->em=$emi;
         $this->compteur_repository=$this->em->getRepository(Compteur::class);
-
+        $this->abonnement_repository=$this->em->getRepository(Abonnement::class);
     }
 
 
@@ -67,6 +69,17 @@ class CompteurController extends AbstractController
             $compteur->setEtat("Attribuer");
             $this->em->flush();
         }
+        return $this->redirectToRoute('app_compteur');
+    }
+    /**
+     * @Route("/desaffecter/{id<[0-9]+>}", name="app_compteur_desaffecter")
+     */
+    public function desaffecter(int $id)
+    {
+        $abonnement=$this->abonnement_repository->find($id);
+        $abonnement->getCompteur()->setEtat("Non attribuer");
+        $abonnement->setCompteur(null);
+        $this->em->flush();
         return $this->redirectToRoute('app_compteur');
     }
 }

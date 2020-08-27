@@ -86,7 +86,7 @@
                                         <td>
                                             <button type="button" class="btn btn-outline-warning btn-sm">
                                                 <font style="horiz-align: right;">
-                                                    <a href="{{ path('app_compteur_coupure', {'id':compteur.id }) }}">
+                                                    <a href="{{ path('app_compteur_desaffecter', {'id':compteur.abonnement.id }) }}">
                                                         Desaffecter
                                                     </a>
                                                 </font>
@@ -116,7 +116,7 @@
                                             <td>
                                                 <button type="button" class="btn btn-outline-warning btn-sm">
                                                     <font style="horiz-align: right;">
-                                                        <a href="{{ path('app_compteur_coupure', {'id':compteur.id }) }}">
+                                                        <a href="{{ path('app_compteur_desaffecter', {'id':compteur.abonnement.id }) }}">
                                                             Desaffecter
                                                         </a>
                                                     </font>
