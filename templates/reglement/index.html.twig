@@ -1,0 +1,162 @@
+{% extends 'accueil/index.html.twig' %}
+
+{% block title %}Consommation | Home{% endblock %}
+
+{% block body %}
+    {#<div class="wrapper">
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a>/Consommation</li>
+                                <li class="breadcrumb-item active">General Form</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- right column -->
+                        <div class="col-md-12">
+                            <!-- general form elements disabled -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title"> Formulaire d'ajout consommation</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <form method="post" action="{{ path('app_consommation_add') }}" class="form">
+                                        <input type="hidden" name="token" value="{{ csrf_token('cons_token') }}">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Numero Compteur *</label>
+                                                    <input type="text" class="form-control" name="numcompteur" placeholder="Saisissez le numero de compteur..." required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="clientForm">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <!-- text input -->
+                                                    <div class="form-group">
+                                                        <label>Nombre de litre *</label>
+                                                        <input type="text" name="nbrlitre" class="form-control" placeholder="nombre de litre..." required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Prix unitaire (F cfa) *</label>
+                                                        <input type="text" name="prixU" class="form-control" value="20" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-form-label" for="datenaiss">Mois de consommation</label>
+                                                        <input type="date" class="form-control" id="moiscons" name="moiscons">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-form-label" for="datenaiss">Date limite de payement</label>
+                                                        <input type="date" class="form-control" id="datelimite" name="datelimite">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="reset" class="btn btn-default">Annuler</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!--/.col (right) -->
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h3 class="card-title">Liste Consommation</h3>
+                                            <div class="card-tools">
+                                                <div class="input-group input-group-sm" style="width: 150px;">
+                                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                                                    <div class="input-group-append">
+                                                        <button type="submit" class="btn btn-default">
+                                                            <i class="fas fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0" style="height: 300px;">
+                            <table class="table table-head-fixed text-nowrap">
+                                <thead>
+                                <tr>
+                                    <th>Numero compteur</th>
+                                    <th>Nombre de litre</th>
+                                    <th>Prix unitaire</th>
+                                    <th>Pour la date</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% if listconsoms != null %}
+                                    {% for consommation in listconsoms %}
+                                        <tr>
+                                            <td>{{ consommation.compteur.numero }}</td>
+                                            <td>{{ consommation.nombrelitre }}</td>
+                                            <td>{{ consommation.prixunitaire }}</td>
+                                            <td>{{ consommation.date }}</td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-info btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        Details
+                                                    </font>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-warning btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        Edit
+                                                    </font>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                    <font style="horiz-align: right;">
+                                                        Archive
+                                                    </font>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>          <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+    </div>#}
+{% endblock %}
+
