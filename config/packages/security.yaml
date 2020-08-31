@@ -12,7 +12,11 @@ security:
             anonymous: false
             lazy: true
             provider: users_in_memory
-
+            #form_login:
+             #   csrf_token_generator: security.csrf.token_manager
+                #default_target_path: after_login_route_name
+                #always_use_default_target_path: true
+                #failure_path: login_failure_route_name
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 

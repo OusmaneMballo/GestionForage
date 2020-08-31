@@ -45,11 +45,6 @@ class Client
     private $dateNaiss;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="client")
-     */
-    private $user;
-
-    /**
      * @ORM\OneToMany(targetEntity=Abonnement::class, mappedBy="client")
      */
     private $abonnements;
@@ -125,18 +120,6 @@ class Client
     public function setDateNaiss(string $dateNaiss): self
     {
         $this->dateNaiss = $dateNaiss;
-
-        return $this;
-    }
-
-    public function getUser(): ?User
-    {
-        return $this->user;
-    }
-
-    public function setUser(?User $user): self
-    {
-        $this->user = $user;
 
         return $this;
     }
