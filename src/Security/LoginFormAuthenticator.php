@@ -6,10 +6,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
+//use Symfony\Component\Security\Http\Authenticator\AuthenticatorInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Guard\AuthenticatorInterface;
 use Symfony\Component\Security\Guard\Token\GuardTokenInterface;
+use Symfony\Component\Security\Http\Authenticator\Passport\PassportInterface;
 
 class LoginFormAuthenticator implements AuthenticatorInterface
 {
@@ -48,6 +50,10 @@ class LoginFormAuthenticator implements AuthenticatorInterface
     public function supports(Request $request)
     {
         // TODO: Implement supports() method.
+
+        //dd($request->attributes->get('_route'));
+        return $request->attributes->get('_route')=="app_login"
+            && $request->isMethod('POST');
     }
 
     /**
@@ -177,5 +183,24 @@ class LoginFormAuthenticator implements AuthenticatorInterface
     public function supportsRememberMe()
     {
         // TODO: Implement supportsRememberMe() method.
+    }
+
+    /**
+     * Create a passport for the current request.
+     *
+     * The passport contains the user, credentials and any additional information
+     * that has to be checked by the Symfony Security system. For example, a login
+     * form authenticator will probably return a passport containing the user, the
+     * presented password and the CSRF token value.
+     *
+     * You may throw any AuthenticationException in this method in case of error (e.g.
+     * a UsernameNotFoundException when the user cannot be found).
+     *
+     * @throws AuthenticationException
+     */
+    public function authenticate(Request $request): PassportInterface
+    {
+        // TODO: Implement authenticate() method.
+        dd("Authenticate");
     }
 }
