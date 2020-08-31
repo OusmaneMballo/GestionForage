@@ -3,20 +3,22 @@ security:
         App\Entity\User: auto
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        users_in_memory: { memory: null }
+        users:
+            entity:
+                class: 'App\Entity\User'
+                property: 'email'
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: true
-            lazy: false
-            provider: users_in_memory
-            #form_login:
-             #   csrf_token_generator: security.csrf.token_manager
-                #default_target_path: after_login_route_name
-                #always_use_default_target_path: true
-                #failure_path: login_failure_route_name
+            anonymous: lazy
+            provider: users
+            guard:
+                authenticators:
+                    - App\Security\LoginFormAuthenticator
+            logout:
+                path: app_logout
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 
@@ -30,4 +32,4 @@ security:
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
-    enable_authenticator_manager: false
+    #enable_authenticator_manager: false
