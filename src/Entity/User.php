@@ -123,6 +123,9 @@ class User implements UserInterface
     public function getRoles()
     {
         // TODO: Implement getRoles() method.
+        $roles=array();
+        $roles[]='ROLE_USER';
+        return array_unique($roles);
     }
 
     public function getPrenomNom(): ?string
