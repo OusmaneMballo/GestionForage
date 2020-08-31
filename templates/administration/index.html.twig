@@ -32,7 +32,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <form method="post" action="" class="form">
+                                    <form method="post" action="{{ path('app_administration_add') }}" class="form">
                                         <input type="hidden" name="token" value="{{ csrf_token('user_token') }}">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -64,22 +64,13 @@
                                                     {% if roles != null %}
                                                         {% for role in roles %}
                                                             <div class="icheck-primary d-inline">
-                                                                <input type="checkbox" id="checkboxPrimary3" value="{{ role.id }}">
+                                                                <input type="checkbox" name="role[]" id="checkboxPrimary3" value="{{ role.id }}">
                                                                 <label for="checkboxPrimary3">
                                                                     {{ role.libelle }}
                                                                 </label>
                                                             </div>
                                                         {% endfor %}
                                                     {% endif %}
-                                                    {#<select class="form-control" name="village" required>
-                                                        <option value="0">---Liste villages---</option>
-                                                        {% if listVillages != null %}
-                                                            {% for village in listVillages %}
-                                                                <option value="{{ village.id }}"> {{ village.nom }}</option>
-                                                            {% endfor %}
-                                                        {% endif %}
-                                                        <option value="-1">Ajouter son village...</option>
-                                                    </select>#}
                                                 </div>
                                             </div>
                                         </div>
@@ -117,31 +108,28 @@
                             <!-- /.row -->
                         </div>
                         <!-- /.card-header -->
-                        {#<div class="card-body table-responsive p-0" style="height: 300px;">
+                        <div class="card-body table-responsive p-0" style="height: 300px;">
                             <table class="table table-head-fixed text-nowrap">
                                 <thead>
                                 <tr>
-                                    <th>Numero compteur</th>
-                                    <th>Nombre de litre</th>
-                                    <th>Prix unitaire</th>
-                                    <th>Pour la date</th>
+                                    <th>Prenom & Nom</th>
+                                    <th>Email</th>
+                                    <th>Liste Profils</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {% if listconsoms != null %}
-                                    {% for consommation in listconsoms %}
+                                {% if users != null %}
+                                    {% for user in users %}
                                         <tr>
-                                            <td>{{ consommation.compteur.numero }}</td>
-                                            <td>{{ consommation.nombrelitre }}</td>
-                                            <td>{{ consommation.prixunitaire }}</td>
-                                            <td>{{ consommation.date }}</td>
+                                            <td>{{ user.prenomnom }}</td>
+                                            <td>{{ user.email }}</td>
                                             <td>
-                                                <button type="button" class="btn btn-outline-info btn-sm">
-                                                    <font style="horiz-align: right;">
-                                                        Details
-                                                    </font>
-                                                </button>
+                                                {% for role in user.roles %}
+                                                    {{ role }}<br/>
+                                                {% endfor %}
+                                            </td>
+                                            <td>
                                                 <button type="button" class="btn btn-outline-warning btn-sm">
                                                     <font style="horiz-align: right;">
                                                         Edit
@@ -149,7 +137,7 @@
                                                 </button>
                                                 <button type="button" class="btn btn-outline-secondary btn-sm">
                                                     <font style="horiz-align: right;">
-                                                        Archive
+                                                        Supprimer
                                                     </font>
                                                 </button>
                                             </td>
@@ -158,7 +146,7 @@
                                 {% endif %}
                                 </tbody>
                             </table>
-                        </div>#}
+                        </div>
                         <!-- /.card-body -->
                     </div>
                 </div>          <!-- /.container-fluid -->
