@@ -1,8 +1,32 @@
 {% extends 'base.html.twig' %}
-
 {% block title %}Log in!{% endblock %}
 
 {% block body %}
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{{ ('asset/login/images/icons/favicon.ico') }}"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/fonts/iconic/css/material-design-iconic-font.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/vendor/animate/animate.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/vendor/css-hamburgers/hamburgers.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/vendor/animsition/css/animsition.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/vendor/select2/select2.min.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/vendor/daterangepicker/daterangepicker.css') }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ ('css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ ('asset/login/css/main.css') }}">
+    <!--===============================================================================================-->
+{#
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -23,6 +47,7 @@
     <input type="hidden" name="_csrf_token"
            value="{{ csrf_token('authenticate') }}"
     >
+#}
 
     {#
         Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
@@ -35,8 +60,67 @@
         </div>
     #}
 
-    <button class="btn btn-lg btn-primary" type="submit">
+{#    <button class="btn btn-lg btn-primary" type="submit">
         Sign in
     </button>
-</form>
+</form>#}
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="login100-more" style="background-image: url('{{ ('asset/login/images/Robinet-Eau-Afrique-Sénégal.jpg') }}');"></div>
+
+            <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+                <span class="login100-form-title p-b-59">
+						Sign In
+                </span>
+                <form method="post" class="login100-form validate-form">
+                    {% if error %}
+                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    {% endif %}
+
+                    {% if app.user %}
+                        <div class="mb-3">
+                            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+                        </div>
+                    {% endif %}
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <label for="label-input100" class="label-input100">Email</label>
+                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="input100" required autofocus>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                        <label for="inputPassword" class="label-input100">Password</label>
+                        <input type="password" name="password" id="inputPassword" class="input100" placeholder="*************" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <input type="hidden" name="_csrf_token"
+                           value="{{ csrf_token('authenticate') }}"
+                    >
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn" type="submit">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/vendor/animsition/js/animsition.min.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/vendor/bootstrap/js/popper.js') }}"></script>
+    <script src="{{ ('asset/login/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/vendor/select2/select2.min.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/vendor/daterangepicker/moment.min.js') }}"></script>
+    <script src="{{ ('asset/login/vendor/daterangepicker/daterangepicker.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/vendor/countdowntime/countdowntime.js') }}"></script>
+    <!--===============================================================================================-->
+    <script src="{{ ('asset/login/js/main.js') }}"></script>
 {% endblock %}

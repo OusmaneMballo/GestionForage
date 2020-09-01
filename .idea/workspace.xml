@@ -2,10 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391d6639-97fb-4ced-b6d1-8a8b498b1c05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/asset/login/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/css/util.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/images/bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/images/icons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/images/icons/map-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/js/map-custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/animate/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/animsition/css/animsition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/animsition/css/animsition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/animsition/js/animsition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/animsition/js/animsition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/bootstrap/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/countdowntime/countdowntime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/daterangepicker/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/daterangepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/asset/login/vendor/select2/select2.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdministrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdministrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,40 +152,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+        <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/administration/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="128" column="59" selection-start-line="128" selection-start-column="59" selection-end-line="128" selection-end-column="59" />
+            <state relative-caret-position="283">
+              <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+        <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Role.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="-1031">
+              <caret line="12" column="104" selection-start-line="12" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -98,6 +189,7 @@
       <find>Menu</find>
       <find>General Elements</find>
       <find>secu</find>
+      <find>container-login100</find>
     </findStrings>
     <replaceStrings>
       <replace>(</replace>
@@ -124,7 +216,6 @@
         <option value="$PROJECT_DIR$/templates/reglement/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/templates/security/login.html.twing.html" />
-        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Client.php" />
         <option value="$PROJECT_DIR$/src/Entity/Role.php" />
         <option value="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" />
@@ -135,6 +226,8 @@
         <option value="$PROJECT_DIR$/src/Controller/AdministrationController.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/public/asset/login/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
       </list>
     </option>
   </component>
@@ -264,36 +357,7 @@
             <path>
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="abonnement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
@@ -305,25 +369,7 @@
               <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="administration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="compteur" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="consommation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gestion_Forages" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gestion_Forages" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="reglement" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -335,7 +381,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/asset/login" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -348,11 +394,12 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/asset/login" />
+      <recent name="$PROJECT_DIR$/public/template" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/asset" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/template" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -382,12 +429,12 @@
       <workItem from="1598609603796" duration="686000" />
       <workItem from="1598704190971" duration="562000" />
       <workItem from="1598712632462" duration="359000" />
-      <workItem from="1598794633796" duration="31169000" />
+      <workItem from="1598794633796" duration="34665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96801000" />
+    <option name="totallyTimeSpent" value="100297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -580,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-715">
-          <caret line="172" column="52" selection-start-line="172" selection-start-column="52" selection-end-line="172" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/consommation/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3445">
@@ -648,13 +681,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/administration/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="585">
           <caret line="128" column="59" selection-start-line="128" selection-start-column="59" selection-end-line="128" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,17 +712,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="-1031">
+          <caret line="12" column="104" selection-start-line="12" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+    <entry file="file://$PROJECT_DIR$/public/asset/login/images/Robinet-Eau-Afrique-Sénégal.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/asset/login/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+        <state relative-caret-position="-8317">
+          <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/asset/login/css/util.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51671" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
