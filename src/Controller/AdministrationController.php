@@ -53,12 +53,17 @@ class AdministrationController extends AbstractController
                     $hash =$this->encoder->encodePassword($user, $request->request->get("password"));
                     $user->setPassword($hash);
                     $user->setPrenomNom($request->request->get("prenom_nom"));
-                    foreach ($request->request->get('role') as $role)
+                    foreach ($request->request->get('role') as $role_id)
                     {
-                        $user->addRole($this->role_repository->find($role));
+                        //$role=new Role();
+                        $role=$this->role_repository->findOneById($role_id);
+                        if($role!=null)
+                        {
+                            $user->addRole($role);
+                            $this->em->persist($user);
+                            $this->em->flush();
+                        }
                     }
-                    $this->em->persist($user);
-                    $this->em->flush();
                 }
             }
         }

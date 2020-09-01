@@ -12,7 +12,8 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: lazy
+            anonymous: true
+            lazy: true
             provider: users
             guard:
                 authenticators:
@@ -30,5 +31,9 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-         - { path: ^/accueil$, roles: [IS_AUTHENTICATED_FULLY, ROLE_USER] }
-         - { path: ^/profile, roles: [IS_AUTHENTICATED_FULLY, ROLE_USER] }
+         - { path: ^/accueil$, roles: [IS_AUTHENTICATED_FULLY] }
+         - { path: ^/administration, roles: [ROLE_ADMIN] }
+         - { path: ^/abonnement, roles: [ROLE_ADMIN] }
+         - { path: ^/compteur, roles: [ROLE_ADMIN] }
+         - { path: ^/consommation, roles: [ROLE_CAISSIER] }
+         - { path: ^/reglement, roles: [ROLE_CAISSIER] }

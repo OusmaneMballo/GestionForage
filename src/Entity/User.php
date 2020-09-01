@@ -123,8 +123,11 @@ class User implements UserInterface
     public function getRoles()
     {
         // TODO: Implement getRoles() method.
-        $roles=array();
-        $roles[]='ROLE_USER';
+        $roles =Array(); //$this->roles;
+        foreach ($this->roles as $r)
+        {
+            $roles[]=$r->getLibelle();
+        }
         return array_unique($roles);
     }
 
@@ -140,6 +143,10 @@ class User implements UserInterface
         return $this;
     }
 
+    /**
+     * @param Role $role
+     * @return User
+     */
     public function addRole(Role $role): self
     {
         if (!$this->roles->contains($role)) {
