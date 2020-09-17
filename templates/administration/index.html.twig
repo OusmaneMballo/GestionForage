@@ -20,7 +20,94 @@
             </section>
 
             <!-- Main content -->
-            <section class="content">
+            {% if(user is defined and user!=null) %}
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- right column -->
+                            <div class="col-md-12">
+                                <!-- general form elements disabled -->
+                                <div class="card card-primary">
+                                    <div class="card-header">
+                                        <h3 class="card-title"> Formulaire de modification d'un utilisateur</h3>
+                                    </div>
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                        <form method="post" action="{{ path('app_administration_add') }}" class="form">
+                                            <input type="hidden" name="token_edit" value="{{ csrf_token('user_token_edit') }}">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="prenom_nom">Prenom & Nom *</label>
+                                                        <input type="text" class="form-control" id="prenom_nom" name="prenom_nom_edit" value="{{ user.nomprenom }}" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="clientForm">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- text input -->
+                                                        <div class="form-group">
+                                                            <label for="email">Email *</label>
+                                                            <input type="email" name="email_edit" id="email" class="form-control" value="{{ user.email }}" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="password">Password *</label>
+                                                            <input type="password" name="password_edit" id="password" value="{{ user.password }}" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label>Roles *</label>
+                                                        {% if roles != null %}
+                                                            {% for role in roles %}
+                                                            {% set break = false %}
+                                                            {% set test = false %}
+                                                            {% for roleUser in user.roles %}
+                                                                {% if(role==roleUser) %}
+                                                                    {% set test = true %}
+                                                                    {% set break = true %}
+                                                                {% endif %}
+                                                                {% endfor %}
+                                                                {% if test==true %}
+                                                                    <div class="icheck-primary d-inline">
+                                                                        <input type="checkbox" name="role_edit[]" id="checkboxPrimary3" value="{{ role.id }}" checked>
+                                                                        <label for="checkboxPrimary3">
+                                                                            {{ roleUser.libelle }}
+                                                                        </label>
+                                                                    </div>
+                                                                    {% else %}
+                                                                        <div class="icheck-primary d-inline">
+                                                                            <input type="checkbox" name="role_edit[]" id="checkboxPrimary3" value="{{ role.id }}">
+                                                                            <label for="checkboxPrimary3">
+                                                                                {{ user.libelle }}
+                                                                            </label>
+                                                                        </div>
+                                                                {% endif %}
+                                                                </div>
+                                                            {% endfor %}
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            <div class="card-footer">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button type="reset" class="btn btn-default">Annuler</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!--/.col (right) -->
+                        </div>
+                    </div>          <!-- /.container-fluid -->
+                </section>
+            {% else %}
+                <section class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <!-- right column -->
@@ -132,7 +219,9 @@
                                             <td>
                                                 <button type="button" class="btn btn-outline-warning btn-sm">
                                                     <font style="horiz-align: right;">
-                                                        Edit
+                                                        <a href="{{ path('app_administration_edit', {'id':user.id }) }}">
+                                                            Edit
+                                                        </a>
                                                     </font>
                                                 </button>
                                                 <button type="button" class="btn btn-outline-secondary btn-sm">
@@ -151,6 +240,7 @@
                     </div>
                 </div>          <!-- /.container-fluid -->
             </section>
+            {% endif %}
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->

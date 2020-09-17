@@ -39,8 +39,8 @@
                                             <div class="col-md-12">
                                                 <!-- select -->
                                                 <div class="form-group">
-                                                    <label>Clients</label>
-                                                    <select class="form-control" name="client">
+                                                    <label for="client">Clients</label>
+                                                    <select class="form-control" name="client" onchange="addClient()" id="client">
                                                         <option value="0">---Liste clients---</option>
                                                         {% if listClients !=null %}
                                                             {% for client in listClients %}
@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="clientForm">
+                                        <div id="clientForm" hidden>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <!-- text input -->

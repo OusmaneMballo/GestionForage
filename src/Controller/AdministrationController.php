@@ -69,4 +69,18 @@ class AdministrationController extends AbstractController
         }
         return $this->redirectToRoute("app_administration");
     }
+    /**
+     * @Route("/user/edit/{id<[0-9]+>}", name="app_administration_edit")
+     */
+    public function edit(int $id)
+    {
+        if($id!=null)
+        {
+            $data['user']=$this->user_repository->find($id);
+            $data['users']=$this->user_repository->findAll();
+            $data['roles']=$this->role_repository->findAll();
+
+            return $this->render('administration/index.html.twig', $data);
+        }
+    }
 }
